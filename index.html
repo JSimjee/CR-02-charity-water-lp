@@ -1,47 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity Water Campaign</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #bf6c46 80%, white 20%) no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    .text-section {
+      max-width: 600px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .text-section img {
+      width: 160px;
+      margin-bottom: 20px;
+    }
+
+    .text-section h1 {
+      color: #77a8bb;
+      font-size: 2.5em;
+      line-height: 1.2em;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .text-section p {
+      font-size: 1em;
+      color: #ffece6;
+      margin-bottom: 30px;
+    }
+
+    .button-box {
+      background-color: #77a8bb;
+      padding: 16px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .follow-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .subscribe-btn {
+      background-color: #bf6c46;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .image-section {
+      margin-top: 120px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .image-section img {
+      width: 320px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: block;
+    }
+
+    .corner-bg {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      height: 200px;
+      background-image: url('https://images.unsplash.com/photo-1610986603167-f5022c6ab407');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .image-section {
+        margin-top: 40px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <div class="container">
+    <div class="text-section">
+      <img src="img/cw_logo-2.png" alt="charity: water logo" />
+      <h1>Every Dollar Brings Clean Water –<br>And You Can Track It.</h1>
+      <p>We send 100% of donations to the field, track every project, and show you the impact.</p>
+      <div class="button-box">
+        <button class="follow-btn">FOLLOW OUR CAUSE</button>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+    </div>
+    <div class="image-section">
+      <img src="img/4548_Ethiopia_2019_CG-.jpg" alt="Water pouring into glass" />
+    </div>
+  </div>
+  <div class="corner-bg"></div>
 </body>
 </html>
