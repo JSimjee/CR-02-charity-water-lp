@@ -1,22 +1,20 @@
 /* charity: water Brand Colors & Fonts
 
 Primary Colors:
-- Yellow:     #FFC907
-- Blue:       #2E9DF7
+- Blue:     `#77A8BB`
+- Brown:    `#BF6C46`
 
 Secondary Colors:
-- Light Blue: #8BD1CB
-- Green:      #4FCB53
-- Orange:     #FF902A
-- Red:        #F5402C
-- Dark Green: #159A48
-- Pink:       #F16061
+- Light Pink (Secondary and Follow Text): `#FFECE6`
+- Email Prompt and Background:      `#FFFFFF`
 
 Fonts:
-- Proxima Nova
-- Avenir
+- Poppins
+- Sans-serif (Fallback)
 
 */
+
+
 
 /* 
   Charity: Water Landing Page Styles
@@ -26,7 +24,8 @@ Fonts:
 /* Set up the main font and background color for the whole page */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, Ubuntu, sans-serif;
+  font-weight: 300;
   background: linear-gradient(to bottom right, #bf6c46 80%, white 20%) no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -132,7 +131,7 @@ body {
 .follow-label {
   color: white;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 600pc;
   margin-top: 20px;
   margin-left: 20px;
   align-self: center;
@@ -156,6 +155,11 @@ body {
   margin-top: 10px;
   animation: fadeIn 0.4s ease-in-out;
 }
+
+.highlight {
+  font-weight: 800;
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
