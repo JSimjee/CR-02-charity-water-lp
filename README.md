@@ -1,5 +1,6 @@
 # Global Career Accelerator Project 2
-This project is meant to provide basic experience with the coding aspect of web development and to showcase using an LLM to speedup some initial learning by, at least for me, allowing for quick and easy filtering of information, so I can exclusively learn new tools and skills. I already have experience with TailwindCSS and some Typescript, but perhaps some syntax differences with HTML and CSS will showcase exciting new features or efficiencies I didn't know about before. 
+This project is meant to provide basic experience with the coding aspect of web development and to showcase using an LLM to speedup some initial learning by, at least for me, allowing for quick and easy filtering of information, so I can exclusively learn new tools and skills. I already have experience with TailwindCSS and some Typescript, but perhaps some syntax differences with HTML and CSS will showcase exciting new features or efficiencies I didn't know about before, or just make a cool-looking website. 
+Anyways below this is the official description. Enjoy the formal-speak.
 
 # Week 2 Project: Build the charity: water Landing Page
 To get started, create a new Codespace from this repo.
