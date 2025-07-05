@@ -98,6 +98,11 @@ body {
   font-size: 1.25em;
   margin: 10px;
   margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  transform: scale(1.08); /* slightly expand */
 }
 
 .image-section {
