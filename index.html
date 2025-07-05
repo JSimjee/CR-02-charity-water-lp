@@ -4,131 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charity Water Campaign</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #bf6c46 80%, white 20%) no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-    }
-
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 60px 40px;
-      max-width: 1200px;
-      margin: auto;
-      position: relative;
-      flex-wrap: wrap;
-    }
-
-    .text-section {
-      max-width: 600px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .text-section img {
-      width: 160px;
-      margin-bottom: 20px;
-    }
-
-    .text-section h1 {
-      color: #77a8bb;
-      font-size: 2.5em;
-      line-height: 1.2em;
-      margin-bottom: 20px;
-      position: relative;
-      z-index: 3;
-    }
-
-    .text-section p {
-      font-size: 1em;
-      color: #ffece6;
-      margin-bottom: 30px;
-    }
-
-    .button-box {
-      background-color: #77a8bb;
-      padding: 16px;
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .follow-btn {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 1em;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .subscribe-btn {
-      background-color: #bf6c46;
-      color: white;
-      padding: 10px 16px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1em;
-    }
-
-    .image-section {
-      margin-top: 120px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .image-section img {
-      width: 320px;
-      height: 420px;
-      object-fit: cover;
-      border-radius: 6px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      display: block;
-    }
-
-    .corner-bg {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      width: 300px;
-      height: 200px;
-      background-image: url('https://images.unsplash.com/photo-1610986603167-f5022c6ab407');
-      background-size: cover;
-      background-position: center;
-      opacity: 0.4;
-      z-index: -1;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-      }
-
-      .image-section {
-        margin-top: 40px;
-      }
-    }
-  </style>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="script.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="text-section">
       <img src="img/cw_logo-2.png" alt="charity: water logo" />
-      <h1>Every Dollar Brings Clean Water –<br>And You Can Track It.</h1>
+			<h1>
+				Every Dollar Brings <span class="nowrap">Clean Water–</span> <br>And You Can Track It.
+			</h1>
       <p>We send 100% of donations to the field, track every project, and show you the impact.</p>
       <div class="button-box">
-        <button class="follow-btn">FOLLOW OUR CAUSE</button>
-        <button class="subscribe-btn">Subscribe</button>
-      </div>
+				<div class="input-group">
+					<p class="follow-label">FOLLOW OUR CAUSE</p>
+					<input type="email" class="email-input" placeholder="Enter your email" required />
+				</div>
+				<button class="subscribe-btn">Subscribe</button>
+  			<p id="thank-you-msg" class="thank-you">Thank you for joining!</p>
+			</div>
     </div>
     <div class="image-section">
       <img src="img/4548_Ethiopia_2019_CG-.jpg" alt="Water pouring into glass" />
